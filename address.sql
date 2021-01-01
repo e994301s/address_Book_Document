@@ -42,7 +42,7 @@ CREATE TABLE `people` (
 
 LOCK TABLES `people` WRITE;
 /*!40000 ALTER TABLE `people` DISABLE KEYS */;
-INSERT INTO `people` VALUES (16,'김대환','asdf@naver.com','친구','술친구','null'),(17,'김기현','kqwer@naver.com','친구','고등학교 친구','null'),(18,'박인우','ddddvvhh@naver.com','친구','탑만 감','null'),(20,'말자하','edsfasdf@naver.com','친구','좋은 친구','20201231154077.jpg'),(21,'차시장','dfasdf@naver.com','친구','고등학교 친구','null'),(22,'김탈론','sdfasdf@naver.com','친구','중학교 친구','null'),(23,'한대희','fgjjnvc@naver.com','친구','고등학교 친구','null'),(24,'장안동 호날두','ksadfnasdf@naver.com','친구','나보다 못함ㅎㅎ','202012311554273.jpg'),(25,'이승훈','dsafasdf@naver.com','친구','밤송이','202012311555311.jpg'),(26,'이승기','','친구','비버 닮음ㅎㅎ','202012311556345.jpg'),(27,'김메기','sdafasdf@naver.com','친구','잠만보','202012311557180.jpg'),(28,'김과장님','adsfasdf@naver.com','회사','성질이 포악함(주의 요망)','202012311558482.jpg'),(29,'이부장님','dsaqvbhj@naver.com','회사','회사는 모텔이 아니다...','202012311559493.jpg'),(30,'최부장','sadfasdfn@naver.com','회사','부하 직원을 괴롭힘 ','20201231160450.jpg'),(31,'김사원','asdfasdf@naver.com','회사','신입사원이 잠을 자?','20201231161454.jpg'),(32,'천사 김대리님','0i9oowenkl@naver.com','회사','사수','20201231162315.jpg'),(33,'김동기','asdfasdf@naver.com','회사','자신만의 세계가 있음','20201231163218.jpg'),(34,'어머니','','가족','사랑하는 우리 어머니','null'),(35,'아버지','','가족','듬직한 아버지','null'),(36,'동생','','가족','ㅇㅇ','null'),(37,'정희원','dfasdfasdf@naver.com','친구','','null'),(38,'제이스','','k','','null');
+INSERT INTO `people` VALUES (16,'김대환','asdf@naver.com','친구','술친구','null'),(17,'김기현','kqwer@naver.com','친구','고등학교 친구','null'),(18,'박인우','ddddvvhh@naver.com','친구','탑만 감','null'),(20,'말자하','edsfasdf@naver.com','친구','좋은 친구','202012311635544.jpg'),(21,'차시장','dfasdf@naver.com','친구','고등학교 친구','null'),(22,'김탈론','sdfasdf@naver.com','친구','중학교 친구','null'),(23,'한대희','fgjjnvc@naver.com','친구','고등학교 친구','null'),(24,'장안동 호날두','ksadfnasdf@naver.com','친구','나보다 못함ㅎㅎ','2020123115575747.jpg'),(25,'이승훈','dsafasdf@naver.com','친구','밤송이','2020123116032611.jpg'),(26,'이승기','','친구','비버 닮음ㅎㅎ','2020123116132240.jpg'),(27,'김메기','sdafasdf@naver.com','친구','잠만보','2020123116220658.jpg'),(28,'김과장님','adsfasdf@naver.com','회사','성질이 포악함(주의 요망)','2020123116618250.jpg'),(29,'이부장님','dsaqvbhj@naver.com','회사','회사는 모텔이 아니다...','20201231155929868.jpg'),(30,'최부장','sadfasdfn@naver.com','회사','부하 직원을 괴롭힘 ','20201231154011488.jpg'),(31,'김사원','asdfasdf@naver.com','회사','신입사원이 잠을 자?','20201231155514918.jpg'),(32,'천사 김대리님','0i9oowenkl@naver.com','회사','사수','20201231155619967.jpg'),(33,'김동기','asdfasdf@naver.com','회사','자신만의 세계가 있음','20201231155814152.jpg'),(34,'어머니','','가족','사랑하는 우리 어머니','null'),(35,'아버지','','가족','듬직한 아버지','null'),(36,'동생','','가족','ㅇㅇ','null'),(37,'정희원','dfasdfasdf@naver.com','친구','','null'),(38,'제이스','','k','','null');
 /*!40000 ALTER TABLE `people` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,4 +170,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-01 16:29:06
+-- Dump completed on 2021-01-01 19:15:15

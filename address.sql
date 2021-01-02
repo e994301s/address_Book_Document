@@ -110,11 +110,13 @@ DROP TABLE IF EXISTS `relation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `relation` (
-  `relationname` varchar(45) DEFAULT NULL,
+  `relationno` int(11) NOT NULL AUTO_INCREMENT,
   `userinfo_useremail` varchar(45) NOT NULL,
-  PRIMARY KEY (`userinfo_useremail`),
+  `relationname` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`relationno`),
+  KEY `fk_relation_userinfo1` (`userinfo_useremail`),
   CONSTRAINT `fk_relation_userinfo1` FOREIGN KEY (`userinfo_useremail`) REFERENCES `userinfo` (`useremail`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,6 +125,7 @@ CREATE TABLE `relation` (
 
 LOCK TABLES `relation` WRITE;
 /*!40000 ALTER TABLE `relation` DISABLE KEYS */;
+INSERT INTO `relation` VALUES (1,'con@naver.com','산악회'),(2,'con@naver.com','학원');
 /*!40000 ALTER TABLE `relation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -194,4 +197,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-02 14:45:45
+-- Dump completed on 2021-01-02 15:21:09

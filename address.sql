@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `address` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `address`;
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: address
@@ -110,10 +112,7 @@ DROP TABLE IF EXISTS `relation`;
 CREATE TABLE `relation` (
   `relationname` varchar(45) DEFAULT NULL,
   `userinfo_useremail` varchar(45) NOT NULL,
-  `people_peopleno` int(11) NOT NULL,
-  PRIMARY KEY (`userinfo_useremail`,`people_peopleno`),
-  KEY `fk_relation_people1_idx` (`people_peopleno`),
-  CONSTRAINT `fk_relation_people1` FOREIGN KEY (`people_peopleno`) REFERENCES `people` (`peopleno`),
+  PRIMARY KEY (`userinfo_useremail`),
   CONSTRAINT `fk_relation_userinfo1` FOREIGN KEY (`userinfo_useremail`) REFERENCES `userinfo` (`useremail`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -195,4 +194,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-02 14:31:41
+-- Dump completed on 2021-01-02 14:45:45

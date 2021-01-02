@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `address` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `address`;
 -- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: address
@@ -103,6 +101,33 @@ INSERT INTO `register` VALUES ('con@naver.com',NULL,16),('con@naver.com',NULL,17
 UNLOCK TABLES;
 
 --
+-- Table structure for table `relation`
+--
+
+DROP TABLE IF EXISTS `relation`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `relation` (
+  `relationname` varchar(45) DEFAULT NULL,
+  `userinfo_useremail` varchar(45) NOT NULL,
+  `people_peopleno` int(11) NOT NULL,
+  PRIMARY KEY (`userinfo_useremail`,`people_peopleno`),
+  KEY `fk_relation_people1_idx` (`people_peopleno`),
+  CONSTRAINT `fk_relation_people1` FOREIGN KEY (`people_peopleno`) REFERENCES `people` (`peopleno`),
+  CONSTRAINT `fk_relation_userinfo1` FOREIGN KEY (`userinfo_useremail`) REFERENCES `userinfo` (`useremail`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `relation`
+--
+
+LOCK TABLES `relation` WRITE;
+/*!40000 ALTER TABLE `relation` DISABLE KEYS */;
+/*!40000 ALTER TABLE `relation` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `statuspeople`
 --
 
@@ -170,4 +195,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-01 19:15:15
+-- Dump completed on 2021-01-02 14:31:41
